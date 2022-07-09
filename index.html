@@ -38,17 +38,29 @@
     </header>
 
     <form>
+      <!-- Input Todo-->
       <input type="text" class="todo-input" />
       <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
       </button>
+
+      <!-- Filter's Todo-->
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
     </form>
 
+    <!-- Todo List -->
     <div class="todo-container">
       <ul class="todo-list"></ul>
     </div>
 
-    <div class="version">version 0.1.22</div>
+    <!-- Version -->
+    <div class="version">version 0.2.22</div>
 
     <script src="./app.js"></script>
   </body>
